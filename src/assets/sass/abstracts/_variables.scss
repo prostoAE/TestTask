@@ -1,0 +1,23 @@
+// Colors
+$main-bg: #E3F5F2;;
+$primary-text: #000000;
+$secondary-text: #7A7A7A;
+$subtitle: #999999;
+$form-color: #1C1C1C;
+$btn-color: #0AD9C6;
+$white: #ffffff;
+
+// Fonts types
+$roboto: 'Open Sans', sans-serif;
+
+// Font size
+$fz-base: 10px;
+
+// Breakpoints
+$breakpoints: (
+        'xs': (max-width: 575px),
+        'sm': (max-width: 767px),
+        'md': (max-width: 991px),
+        'lg': (max-width: 1199px),
+        'xl': (min-width: 1200px),
+);

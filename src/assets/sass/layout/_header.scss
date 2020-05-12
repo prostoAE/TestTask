@@ -1,0 +1,51 @@
+.header {
+    min-height: 770px;
+    display: flex;
+    align-items: center;
+    background: $main-bg url("../img/bg.jpg") no-repeat right;
+
+    @include respond-to('md') {
+        background-position-x: 500px;
+    }
+
+    @include respond-to('sm') {
+        background-position-x: 320px
+    }
+
+    .main-info {
+        padding-right: 45px;
+
+        @include respond-to('md') {
+            padding-right: 15px;
+        }
+
+        &__subtitle {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            letter-spacing: 1.08333px;
+            text-transform: uppercase;
+            color: $subtitle;
+        }
+
+        &__title {
+            margin-top: 7px;
+            margin-bottom: 29px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 3rem;
+            line-height: 3.8rem;
+            letter-spacing: -1.27273px;
+            color: $primary-text;
+        }
+
+        &__desc {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            color: $secondary-text;
+        }
+    }
+}

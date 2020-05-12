@@ -1,0 +1,38 @@
+// abstracts folder
+@import
+'abstracts/variables',
+'abstracts/mixins',
+'abstracts/functions',
+'abstracts/placeholders';
+
+// vendors folder
+//@import
+//    'vendors/*';
+
+// base folder
+@import
+'base/reset',
+'base/base',
+'base/typography';
+
+// layout folder
+@import
+'layout/grid',
+'layout/header',
+'layout/footer',
+'layout/sidebar',
+'layout/navigation';
+
+// components folder
+@import
+'components/buttons',
+'components/form';
+
+// pages folder
+@import
+'pages/home';
+
+// themes folder
+@import
+'themes/theme',
+'themes/admin';

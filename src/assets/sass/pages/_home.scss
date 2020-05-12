@@ -1,0 +1,65 @@
+.page-content {
+    margin-top: 70px;
+
+    .article {
+        margin-bottom: 50px;
+        padding: 0 70px;
+
+        @include respond-to('md') {
+            padding: 0;
+        }
+
+        .reverse {
+            @include respond-to('md') {
+                flex-direction: row-reverse;
+            }
+
+            @include respond-to('sm') {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .img-box {
+            height: 350px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+
+            @include respond-to('sm') {
+                height: 100%;
+            }
+        }
+
+        &__img {
+            @include respond-to('sm') {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__body {
+            margin: 0 10px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2.2rem;
+            line-height: 3.4rem;
+            letter-spacing: -0.5px;
+            color: $primary-text;
+        }
+
+        &__desc {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            color: $secondary-text;
+        }
+    }
+}

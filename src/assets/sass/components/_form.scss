@@ -1,0 +1,55 @@
+.form {
+    width: 411px;
+    height: 465px;
+    padding: 78px 56px;
+    display: flex;
+    flex-direction: column;
+    background: $form-color;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    border-radius: 10px;
+
+    @include respond-to('md') {
+        width: 340px;
+        height: 390px;
+        padding: 40px 22px;
+    }
+
+    @include respond-to('sm') {
+        margin: 40px auto 0;
+        max-width: 100%;
+    }
+
+    &__input {
+        margin-bottom: 20px;
+        padding: 13px 31px;
+        background: $white;
+        border: none;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $form-color;
+        transition: background-color .3s;
+
+        &[type="submit"] {
+            background: $btn-color;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 3.2rem;
+
+            &:hover {
+                background: darken($btn-color, 10%);
+            }
+        }
+    }
+
+    &__info {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+        color: $secondary-text;
+    }
+}
